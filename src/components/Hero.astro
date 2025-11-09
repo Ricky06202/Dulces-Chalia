@@ -1,0 +1,29 @@
+---
+// src/components/Hero.astro
+// Reemplaza 'chalia.jpg' con la ruta real de la foto de tu abuela
+const chaliaPhoto = '/Portada.jpg'; 
+---
+<section id="hero" class="relative overflow-hidden bg-white">
+    <div class="container mx-auto px-4 py-20 md:py-32 flex flex-col md:flex-row items-center justify-between gap-10">
+        
+        <div class="flex-1 max-w-xl text-center md:text-left">
+            <h1 class="text-7xl md:text-8xl lg:text-9xl font-extrabold text-amber-900 leading-tight mb-4">
+                DULCES <br class="hidden md:block" />CHALIA
+            </h1>
+            <p class="text-2xl md:text-3xl font-light text-amber-700 mt-4">
+                Endulzando tus momentos más especiales con sabor y arte.
+            </p>
+        </div>
+
+        <div class="flex-shrink-0 w-full max-w-md md:max-w-none md:w-1/2">
+            <div class="relative w-full aspect-square rounded-full shadow-2xl overflow-hidden transform rotate-3 hover:rotate-0 transition-transform duration-500 border-8 border-white">
+                <img 
+                    src={chaliaPhoto} 
+                    alt="Una foto de Chalia, la pastelera, sonriendo" 
+                    class="object-cover w-full h-full"
+                    loading="eager"
+                />
+            </div>
+        </div>
+    </div>
+</section>

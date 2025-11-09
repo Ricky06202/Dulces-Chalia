@@ -1,0 +1,58 @@
+---
+// src/components/About.astro
+// Reemplaza estas rutas con las imágenes que uses
+const mainCakePhoto = '/Galeria (19).jpg';
+const flowersPhoto = '/Galeria (130).jpg';
+---
+<section id="about" class="bg-amber-50 py-16 md:py-24">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <h2 class="text-4xl font-bold text-center text-amber-800 mb-12">Nuestra Historia y Sazón</h2>
+
+        <div class="space-y-12 text-lg leading-relaxed">
+            
+            <p>
+                <strong class="font-bold">¡Bienvenido/a al mundo de Dulces Chalia!</strong>
+                Mi nombre es Chalia Arce y llevo más de <strong class="font-bold">AÑOS DE EXPERIENCIA</strong> endulzando celebraciones y creando recuerdos inolvidables a través de mis postres artesanales. Cada dulce, desde una simple galleta hasta un majestuoso pastel de bodas, está hecho con <strong class="font-bold">pasión</strong>, <strong class="font-bold">los mejores ingredientes</strong> y un <strong class="font-bold">cuidado exquisito</strong> por el detalle.
+            </p>
+
+            <figure class="my-8 shadow-xl rounded-lg overflow-hidden border-4 border-white">
+                <img 
+                    src={mainCakePhoto} 
+                    alt="Pastel de boda elegante o Chalia decorando un postre" 
+                    class="w-full h-auto object-cover"
+                    loading="lazy"
+                />
+                <figcaption class="text-center text-sm italic text-gray-500 p-2 bg-white">
+                    Cada pastel es una obra de arte personalizada.
+                </figcaption>
+            </figure>
+
+            <p>
+                Mi especialidad es el arte del azúcar. Me dedico a la elaboración de <strong class="font-bold">flores de azúcar</strong> realistas que transforman cualquier postre en una obra de arte. Si sueñas con un diseño, ¡puedo hacerlo realidad! Además, nos especializamos en:
+            </p>
+            
+            <ul class="list-disc list-inside ml-4 space-y-2 text-amber-800 font-medium">
+                <li><strong class="font-bold">Pasteles de Boda:</strong> Creaciones elegantes y personalizadas, el centro de atención de tu gran día.</li>
+                <li><strong class="font-bold">Pasteles de Cumpleaños:</strong> Temáticas y sabores únicos para todas las edades.</li>
+                <li><strong class="font-bold">Galletas Decoradas:</strong> Pequeñas obras de arte comestibles, perfectas para regalos y mesas de dulces.</li>
+            </ul>
+
+            <figure class="my-8 shadow-xl rounded-lg overflow-hidden border-4 border-white">
+                <img 
+                    src={flowersPhoto} 
+                    alt="Un conjunto de flores de azúcar de diferentes colores" 
+                    class="w-full h-auto object-cover"
+                    loading="lazy"
+                />
+                <figcaption class="text-center text-sm italic text-gray-500 p-2 bg-white">
+                    Flores de azúcar: El toque de realismo y belleza en cada pastel.
+                </figcaption>
+            </figure>
+
+            <p>
+                En Dulces Chalia, la calidad y el amor son nuestros ingredientes secretos. ¡Esperamos ser parte de tu próxima celebración!
+            </p>
+
+        </div>
+    </div>
+</section>
