@@ -1,7 +1,7 @@
 ---
 // src/components/Hero.astro
 // Reemplaza 'chalia.jpg' con la ruta real de la foto de tu abuela
-const chaliaPhoto = '/Portada.jpg'; 
+import chaliaPhoto from '@/assets/Portada.jpg';
 ---
 <section id="hero" class="relative overflow-hidden bg-white">
     <div class="container mx-auto px-4 py-20 md:py-32 flex flex-col md:flex-row items-center justify-between gap-10">
@@ -15,10 +15,10 @@ const chaliaPhoto = '/Portada.jpg';
             </p>
         </div>
 
-        <div class="flex-shrink-0 w-full max-w-md md:max-w-none md:w-1/2">
+        <div class="shrink-0 w-full max-w-md md:max-w-none md:w-1/2">
             <div class="relative w-full aspect-square rounded-full shadow-2xl overflow-hidden transform rotate-3 hover:rotate-0 transition-transform duration-500 border-8 border-white">
                 <img 
-                    src={chaliaPhoto} 
+                    src={chaliaPhoto.src} 
                     alt="Una foto de Chalia, la pastelera, sonriendo" 
                     class="object-cover w-full h-full"
                     loading="eager"

@@ -1,7 +1,7 @@
 ---
 // src/components/About.astro
-const mainCakePhoto = '/Galeria (19).jpg';
-const flowersPhoto = '/Galeria (130).jpg';
+import mainCakePhoto from '@/assets/galeria/Galeria (19).jpg';
+import flowersPhoto from '@/assets/galeria/Galeria (130).jpg';
 ---
 
 <section id="about" class="bg-amber-50 py-12 md:py-16">
@@ -24,7 +24,7 @@ const flowersPhoto = '/Galeria (130).jpg';
                 </div>
                 <div class="md:w-1/2 h-64 md:h-auto">
                     <img 
-                        src={mainCakePhoto} 
+                        src={mainCakePhoto.src} 
                         alt="Pastel de boda elegante o Chalia decorando un postre" 
                         class="w-full h-full object-cover"
                         loading="lazy"
@@ -44,7 +44,7 @@ const flowersPhoto = '/Galeria (130).jpg';
                 </p>
                 <div class="overflow-hidden rounded-xl shadow-md max-w-4xl mx-auto">
                     <img 
-                        src={flowersPhoto} 
+                        src={flowersPhoto.src} 
                         alt="Flores de azúcar de diferentes colores" 
                         class="w-full h-96 object-cover rounded-lg transform hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -63,8 +63,8 @@ const flowersPhoto = '/Galeria (130).jpg';
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Servicio 1 -->
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-                        <div class="h-56 bg-cover bg-center" style="background-image: url('/Galeria (3).jpg')"></div>
-                        <div class="p-6 flex-grow">
+                        <div class="h-56 bg-cover bg-center" style="background-image: url('/src/assets/galeria/Galeria (3).jpg')"></div>
+                        <div class="p-6 grow">
                             <h4 class="font-bold text-xl text-amber-800 mb-3">Pasteles de Boda</h4>
                             <p class="text-gray-600">Creaciones elegantes y personalizadas, el centro de atención de tu gran día.</p>
                         </div>
@@ -72,8 +72,8 @@ const flowersPhoto = '/Galeria (130).jpg';
                     
                     <!-- Servicio 2 -->
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-                        <div class="h-56 bg-cover bg-center" style="background-image: url('/Galeria (48).jpg')"></div>
-                        <div class="p-6 flex-grow">
+                        <div class="h-56 bg-cover bg-center" style="background-image: url('/src/assets/galeria/Galeria (48).jpg')"></div>
+                        <div class="p-6 grow">
                             <h4 class="font-bold text-xl text-amber-800 mb-3">Pasteles de Cumpleaños</h4>
                             <p class="text-gray-600">Temáticas y sabores únicos para todas las edades.</p>
                         </div>
@@ -81,8 +81,8 @@ const flowersPhoto = '/Galeria (130).jpg';
                     
                     <!-- Servicio 3 -->
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-                        <div class="h-56 bg-cover bg-center" style="background-image: url('/Galeria (10).jpg')"></div>
-                        <div class="p-6 flex-grow">
+                        <div class="h-56 bg-cover bg-center" style="background-image: url('/src/assets/galeria/Galeria (10).jpg')"></div>
+                        <div class="p-6 grow">
                             <h4 class="font-bold text-xl text-amber-800 mb-3">Galletas Decoradas</h4>
                             <p class="text-gray-600">Pequeñas obras de arte comestibles, perfectas para regalos.</p>
                         </div>
