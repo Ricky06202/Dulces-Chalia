@@ -2,6 +2,10 @@
 // src/components/About.astro
 import mainCakePhoto from '@/assets/galeria/Galeria (19).jpg';
 import flowersPhoto from '@/assets/galeria/Galeria (130).jpg';
+import weddingCake from '@/assets/galeria/Galeria (3).jpg';
+import birthdayCake from '@/assets/galeria/Galeria (48).jpg';
+import cookies from '@/assets/galeria/Galeria (10).jpg';
+
 ---
 
 <section id="about" class="bg-amber-50 py-12 md:py-16">
@@ -63,7 +67,7 @@ import flowersPhoto from '@/assets/galeria/Galeria (130).jpg';
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Servicio 1 -->
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-                        <div class="h-56 bg-cover bg-center" style="background-image: url('/src/assets/galeria/Galeria (3).jpg')"></div>
+                        <div class="h-56 bg-cover bg-center" style={`background-image: url('${weddingCake.src}')`}></div>
                         <div class="p-6 grow">
                             <h4 class="font-bold text-xl text-amber-800 mb-3">Pasteles de Boda</h4>
                             <p class="text-gray-600">Creaciones elegantes y personalizadas, el centro de atención de tu gran día.</p>
@@ -72,7 +76,7 @@ import flowersPhoto from '@/assets/galeria/Galeria (130).jpg';
                     
                     <!-- Servicio 2 -->
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-                        <div class="h-56 bg-cover bg-center" style="background-image: url('/src/assets/galeria/Galeria (48).jpg')"></div>
+                        <div class="h-56 bg-cover bg-center" style={`background-image: url('${birthdayCake.src}')`}></div>
                         <div class="p-6 grow">
                             <h4 class="font-bold text-xl text-amber-800 mb-3">Pasteles de Cumpleaños</h4>
                             <p class="text-gray-600">Temáticas y sabores únicos para todas las edades.</p>
@@ -81,7 +85,7 @@ import flowersPhoto from '@/assets/galeria/Galeria (130).jpg';
                     
                     <!-- Servicio 3 -->
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-                        <div class="h-56 bg-cover bg-center" style="background-image: url('/src/assets/galeria/Galeria (10).jpg')"></div>
+                        <div class="h-56 bg-cover bg-center" style={`background-image: url('${cookies.src}')`}></div>
                         <div class="p-6 grow">
                             <h4 class="font-bold text-xl text-amber-800 mb-3">Galletas Decoradas</h4>
                             <p class="text-gray-600">Pequeñas obras de arte comestibles, perfectas para regalos.</p>
